@@ -27,7 +27,8 @@
       * Unit Of Work
       * Dependency Injection
       
-       
+      
+      Proje Detayları:
   
 
  
