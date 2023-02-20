@@ -30,8 +30,7 @@
       * Dependency Injection
       
       
-      Proje Detayları:
-  
+## Proje Detayları
 Mimari: N-Katmanlı Mimari
   Katmanlar: Data, Entities, Presentation(UI), Core(Shared), Services
   
