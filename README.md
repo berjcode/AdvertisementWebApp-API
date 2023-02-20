@@ -3,7 +3,9 @@
 
 # Project
 
-
+İnsanların ilan paylaşabileceği bir web uygulaması.
+ Özellikler: 
+         İlan paylaşma, mesajlaşma, yorum yapma, log tutma, Authentication, Authorization ve genel yazılım prensiplerine uygun olması...
 
 
 
@@ -30,5 +32,7 @@
       
       Proje Detayları:
   
-
+Mimari: N-Katmanlı Mimari
+  Katmanlar: Data, Entities, Presentation(UI), Core(Shared), Services
+  
  
