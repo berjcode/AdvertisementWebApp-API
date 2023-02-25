@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "AdvertisementApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AdvertisementApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AdvertisementApp.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AdvertisementApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../AdvertisementApp.Core/AdvertisementApp.Core.csproj",
+      "msbuildProject": "../AdvertisementApp.Core/AdvertisementApp.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "AdvertisementApp.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\abdbl\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\abdbl\\OneDrive\\Belgeler\\GitHub\\AdvertisementWebApp\\AdvertisementWebApp\\AdvertisementApp.Core\\AdvertisementApp.Core.csproj": {
+              "projectPath": "C:\\Users\\abdbl\\OneDrive\\Belgeler\\GitHub\\AdvertisementWebApp\\AdvertisementWebApp\\AdvertisementApp.Core\\AdvertisementApp.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
