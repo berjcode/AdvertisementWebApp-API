@@ -9,13 +9,13 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvertisementApp.Data.Concrete
+namespace AdvertisementApp.Data.Concrete.Entityframework.Repositories
 {
-    public class AdvertisementRepository : EfEntityRepositoryBase<Advertisement>, IAdvertisement
+    public class EfAdvertisementRepository : EfEntityRepositoryBase<Advertisement>, IAdvertisement
     {
 
         //efentityrepositorytbase constructor dbcontext var.
-        public AdvertisementRepository(DbContext context) : base(context)
+        public EfAdvertisementRepository(DbContext context) : base(context)
         {
         }
     }

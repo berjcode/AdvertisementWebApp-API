@@ -9,11 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvertisementApp.Data.Concrete
+namespace AdvertisementApp.Data.Concrete.Entityframework.Repositories
 {
-    public class CategoryRepository : EfEntityRepositoryBase<Category>, ICategory
+    public class EfCategoryRepository : EfEntityRepositoryBase<Category>, ICategory
     {
-        public CategoryRepository(DbContext context) : base(context)
+        public EfCategoryRepository(DbContext context) : base(context)
         {
         }
     }
