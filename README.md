@@ -24,8 +24,9 @@
 
 
  ### Design Patterns:
-      * Generic Repository                                                                                                                                      
-      * MVC                                                                                                                                     
+      * Generic Repository     
+      * Repository 
+                                                                                                                                          
       * Unit Of Work
       * Dependency Injection
       
