@@ -10,4 +10,8 @@
     <ProjectReference Include="..\AdvertisementApp.Core\AdvertisementApp.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+
 </Project>
