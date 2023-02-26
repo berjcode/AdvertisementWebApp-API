@@ -47,7 +47,8 @@ namespace AdvertisementApp.Core.Data.Concrete.Entityframework
             });
 
         }
-
+      
+     
         public async Task<IList<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> predicate = null, params Expression<Func<TEntity, object>>[] includeProperties)
         {
             //sorguları ve filtreleri oluşturmamızı sağlar.
@@ -61,7 +62,7 @@ namespace AdvertisementApp.Core.Data.Concrete.Entityframework
 
             //değer varsa
             if(includeProperties.Any())
-            {
+            {   
                 foreach(var includeProperty in includeProperties)
                 {
                     query =query.Include(includeProperty);
