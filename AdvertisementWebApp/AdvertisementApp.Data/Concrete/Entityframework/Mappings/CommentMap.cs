@@ -9,18 +9,17 @@ using System.Threading.Tasks;
 
 namespace AdvertisementApp.Data.Concrete.Entityframework.Mappings
 {
-    public class CategoryMap : IEntityTypeConfiguration<Category>
+
+    public class CommentMap : IEntityTypeConfiguration<Comment>
     {
-        public void Configure(EntityTypeBuilder<Category> builder)
+        public void Configure(EntityTypeBuilder<Comment> builder)
         {
-            builder.HasKey(c => c.Id);
+            builder.HasKey(x => x.Id);
+            builder.Property(x=> x.Id).ValueGeneratedOnAdd();
+            builder.Property(x=> x.Text).IsRequired().HasMaxLength(300);
+            builder.HasOne<Advertisement>(a => a.Advertisements).WithMany(a => a.Comments).HasForeignKey(c => c.AdvertisementId);
 
-            builder.Property(c=> c.Id ).ValueGeneratedOnAdd();
-
-            builder.Property(c=> c.Name).IsRequired().HasMaxLength(50);
-
-            builder.Property(c =>c.Description).IsRequired().HasMaxLength(250);
-            //
+            builder.HasOne<User>(u=> u.Users).WithMany(u => u.Comments).HasForeignKey(c => c.UserId);
 
 
             //
@@ -33,8 +32,9 @@ namespace AdvertisementApp.Data.Concrete.Entityframework.Mappings
             builder.Property(a => a.IsDeleted).IsRequired(true);
 
             builder.Property(a => a.Note).HasMaxLength(300);
+            builder.ToTable("Comments");
 
-            builder.ToTable("Categories");
+
 
 
         }

@@ -22,5 +22,6 @@ namespace AdvertisementApp.Entities.Concrete
 
         public User Users { get; set; }
 
+
     }
 }

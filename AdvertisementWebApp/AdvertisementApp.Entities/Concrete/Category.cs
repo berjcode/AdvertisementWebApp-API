@@ -1,4 +1,5 @@
 ﻿using AdvertisementApp.Core.Entities.Abstract;
+using AdvertisementApp.Core.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace AdvertisementApp.Entities.Concrete
 {
 
-   public class Category:IEntity
+   public class Category: EntityBase,IEntity
     {
 
         public string Name { get; set; }
