@@ -1,4 +1,5 @@
-﻿using AdvertisementApp.Entities.Concrete;
+﻿using AdvertisementApp.Data.Concrete.Entityframework.Mappings;
+using AdvertisementApp.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,20 @@ namespace AdvertisementApp.Data.Concrete.Entityframework.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source= berjcode; Initial Catalog= AdvertisementApp; Integrated Security=true;");
+            optionsBuilder.UseSqlServer("Data Source= berjcode; Initial Catalog= AdvertisementAppDb; Integrated Security=true;");
+        }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new AdvertisementMap());
+            modelBuilder.ApplyConfiguration(new CategoryMap());
+
+            modelBuilder.ApplyConfiguration(new CommentMap());
+
+            modelBuilder.ApplyConfiguration(new UserMap());
+            modelBuilder.ApplyConfiguration(new UserRoleMap());
+
         }
     }
 }

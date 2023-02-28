@@ -1,0 +1,12 @@
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\bin\Debug\net6.0\AdvertisementApp.Core.deps.json
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\bin\Debug\net6.0\AdvertisementApp.Core.dll
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\bin\Debug\net6.0\AdvertisementApp.Core.pdb
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\AdvertisementApp.Core.csproj.AssemblyReference.cache
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\AdvertisementApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\AdvertisementApp.Core.AssemblyInfoInputs.cache
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\AdvertisementApp.Core.AssemblyInfo.cs
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\AdvertisementApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\AdvertisementApp.Core.dll
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\refint\AdvertisementApp.Core.dll
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\AdvertisementApp.Core.pdb
+C:\Users\abdbl\OneDrive\Belgeler\GitHub\AdvertisementWebApp\AdvertisementWebApp\AdvertisementApp.Core\obj\Debug\net6.0\ref\AdvertisementApp.Core.dll

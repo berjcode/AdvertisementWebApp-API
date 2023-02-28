@@ -19,7 +19,7 @@ namespace AdvertisementApp.Core.Entities.Concrete
         public virtual bool IsActive { get; set; } = true;
 
 
-        public virtual string Note { get; set; }
+        public virtual string Note { get; set; } = string.Empty;
 
 
 

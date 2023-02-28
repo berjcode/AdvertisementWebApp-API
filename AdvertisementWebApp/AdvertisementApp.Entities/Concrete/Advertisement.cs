@@ -40,6 +40,8 @@ namespace AdvertisementApp.Entities.Concrete
 
 
         // 
+
+        
         public ICollection<Comment> Comments { get; set; }
 
 

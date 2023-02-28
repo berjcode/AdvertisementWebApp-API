@@ -14,24 +14,26 @@ namespace AdvertisementApp.Data.Concrete.Entityframework.Mappings
     {
         public void Configure(EntityTypeBuilder<Comment> builder)
         {
-            builder.HasKey(x => x.Id);
-            builder.Property(x=> x.Id).ValueGeneratedOnAdd();
-            builder.Property(x=> x.Text).IsRequired().HasMaxLength(300);
-            builder.HasOne<Advertisement>(a => a.Advertisements).WithMany(a => a.Comments).HasForeignKey(c => c.AdvertisementId);
+            builder.HasKey(c => c.Id);
+            builder.Property(c=> c.Id).ValueGeneratedOnAdd();
+            builder.Property(c=> c.Text).IsRequired().HasMaxLength(300);
+            
 
-            builder.HasOne<User>(u=> u.Users).WithMany(u => u.Comments).HasForeignKey(c => c.UserId);
+            
 
-
-            //
-            builder.Property(a => a.CreatedDate).IsRequired();
-            builder.Property(a => a.UpdatedDate).IsRequired();
 
             //
+            builder.Property(c => c.CreatedDate).IsRequired();
+            builder.Property(c => c.UpdatedDate).IsRequired();
 
-            builder.Property(a => a.IsActive).IsRequired(true);
-            builder.Property(a => a.IsDeleted).IsRequired(true);
+            //
 
-            builder.Property(a => a.Note).HasMaxLength(300);
+            builder.Property(c => c.IsActive).IsRequired(true);
+            builder.Property(c => c.IsDeleted).IsRequired(true);
+
+            builder.Property(c => c.Note).HasMaxLength(300);
+            builder.HasOne<Advertisement>(c => c.Advertisements).WithMany(a => a.Comments).HasForeignKey(c => c.AdvertisementId);
+            builder.HasOne<User>(c => c.Users).WithMany(u => u.Comments).HasForeignKey(c => c.UserId);
             builder.ToTable("Comments");
 
 
